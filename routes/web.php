@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controllers\ResepController;
+use App\Http\Controllers\DoctorController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ResepObatController;
+use App\Http\Controllers\SusterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +22,5 @@ Route::get('/', function () {
 });
 
 
-Route::resource('resep', ResepController::class);
+Route::resource('resepobat', ResepObatController::class);
+
